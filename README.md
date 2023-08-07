@@ -15,13 +15,13 @@
 <p>✔️ O valor da comanda é adicionada ao caixa do restaurante ao definí-la como paga.</p>
 <p>✔️ É possível adicionar ou subtrair valores em cima do valor do caixa do restaurante.</p>
 
-<br>
-
-<blockquote><strong>Obs:</strong> O programa apresenta algumas limitações de tratamentos de erros, inserções e leitura de arquivos e entre outros pequenos detalhes.</blockquote>
-
 <h3>Sobre</h3>
 <p>• O programa foi construído 100% na linguagem de programação C.</p>
 <p>• O programa foi construído através do editor de código (Visual Studio Code).</p>
+
+<br>
+
+<blockquote><strong>Obs:</strong> O programa apresenta algumas limitações de tratamentos de erros, inserções e leitura de arquivos e entre outros pequenos detalhes.</blockquote>
 
 <h1></h1>
 
