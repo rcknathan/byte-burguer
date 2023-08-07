@@ -15,6 +15,9 @@
 <p>✔️ O valor da comanda é adicionada ao caixa do restaurante ao definí-la como paga.</p>
 <p>✔️ É possível adicionar ou subtrair valores em cima do valor do caixa do restaurante.</p>
 
+<h3><strong>Observação:</strong></h3>
+<p>⚠️ A interface do programa é no próprio terminal.</p>
+
 <h3>Sobre</h3>
 <p>• O programa foi construído 100% na linguagem de programação C.</p>
 <p>• O programa foi construído através do editor de código (Visual Studio Code).</p>
