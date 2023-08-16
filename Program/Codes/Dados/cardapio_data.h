@@ -1,4 +1,4 @@
-// Funções que manipulamos dados do card?pio
+// Funções que manipulamos dados do cardápio
 
 #include <stdio.h>
 #include <stdlib.h>
