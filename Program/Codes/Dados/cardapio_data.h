@@ -1,4 +1,4 @@
-// Fun??es que manipulamos dados do card?pio
+// Funções que manipulamos dados do card?pio
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,7 +19,7 @@ typedef struct item Item;
 Item *listaProdutos, *produtoRemovido = NULL;
 FILE *cardapioDB;
 
-// Fun??o que adiciona o produto ? lista encadeada
+// Função que adiciona o produto à lista encadeada
 void adicionarProduto(Item **lista, int id, char *nome, float valor) {
     Item *ponteiroAuxiliar, *novoItem = malloc(sizeof(Item));
 
@@ -33,14 +33,14 @@ void adicionarProduto(Item **lista, int id, char *nome, float valor) {
     }
     else {
         ponteiroAuxiliar = *lista;
-        while(ponteiroAuxiliar -> proximoItem != NULL) { // Enquanto o ponteiro para o pr?ximo item n?o for nulo...
-            ponteiroAuxiliar = ponteiroAuxiliar -> proximoItem; // ...O ponteiro auxiliar recebe o pr?ximo item
+        while(ponteiroAuxiliar -> proximoItem != NULL) { // Enquanto o ponteiro para o próximo item não for nulo...
+            ponteiroAuxiliar = ponteiroAuxiliar -> proximoItem; // ...O ponteiro auxiliar recebe o próximo item
         }
-        ponteiroAuxiliar -> proximoItem = novoItem; // O pr?ximo item recebe o novo item quando o while n?o ? mais atendido
+        ponteiroAuxiliar -> proximoItem = novoItem; // O próximo item recebe o novo item quando o while não é mais atendido
     }
 }
 
-// Fun??o que pede ao usu?rio as informa??es a serem inseridas na lista encadeada
+// Função que pede ao usuário as informações a serem inseridas na lista encadeada
 void input_adicionarProduto() {
     system("cls");
 
@@ -59,7 +59,7 @@ void input_adicionarProduto() {
     gets(nome);
     fprintf(cardapioDB, "%s ", nome);
 
-    printf("Pre�o Do Produto: ");
+    printf("Preço Do Produto: ");
     scanf("%f", &valor);
     fprintf(cardapioDB, "%.2f\n", valor);
 
@@ -68,7 +68,7 @@ void input_adicionarProduto() {
     adicionarProduto(&listaProdutos, id, nome, valor);
 }
 
-// Fun??o que remove um produto da lista encadeada atrav?s do ID
+// Função que remove um produto da lista encadeada através do ID
 Item* removerProduto(Item **lista, int id) {
     Item *ponteiroAuxiliar, *removerItem = NULL;
 
@@ -112,7 +112,7 @@ void excluirRegistroProdutos(int id) {
     rename("../DataBase/arquivoTemporarioProdutos.txt", "../DataBase/cardapioDB.txt");
 }
 
-// Fun??o que pede ao usu?rio o ID do produto a ser removido da lista encadeada
+// Função que pede ao usuário o ID do produto a ser removido da lista encadeada
 void input_removerProduto() {
     system("cls");
 
@@ -130,16 +130,16 @@ void input_removerProduto() {
         free(produtoRemovido);
     } else {
         system("cls");
-        printf("Produto n�o encontrado!");
+        printf("Produto não encontrado!");
     }
     Sleep(2000);
 }
 
-// Fun??o que imprime o card?pio, ou seja, cada elemento da lista
+// Função que imprime o cardápio, ou seja, cada elemento da lista
 void imprimirCardapio(Item *item) {
     system("cls");
 
-    printf("------------------------Card�pio---------------------------\n\n");
+    printf("------------------------Cardápio---------------------------\n\n");
 
     while(item != NULL) {
         printf("%d | %s .............................. R$ %.2f\n", item -> idProduto, item -> nomeProduto, item -> valorProduto);
@@ -151,7 +151,7 @@ void imprimirCardapio(Item *item) {
     getch();
 }
 
-// Fun??o que faz a leitura dos itens do card?pio no arquivo ao iniciar o programa e joga na estrutura
+// Função que faz a leitura dos itens do cardápio no arquivo ao iniciar o programa e joga na estrutura
 void lerCardapio() {
     int id;
     char nome[100];
