@@ -28,7 +28,7 @@ void adicionarProduto(Item **lista, int id, char *nome, float valor) {
     novoItem -> valorProduto = valor;
     novoItem -> proximoItem = NULL;
 
-    if(*lista == NULL) { // Se a lista est? vazia...
+    if(*lista == NULL) { // Se a lista está vazia...
         *lista = novoItem; // ...A lista recebe o novo item
     }
     else {
