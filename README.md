@@ -25,7 +25,7 @@
 
 <br>
 
-<blockquote><strong>Obs:</strong> O programa apresenta algumas limitações de tratamentos de erros, inserções e leitura de arquivos e entre outros pequenos detalhes.</blockquote>
+<blockquote><strong>Obs:</strong> O programa apresenta algumas limitações de tratamentos de erros, inserções e leitura de arquivos, entre outros pequenos detalhes.</blockquote>
 
 <h1></h1>
 
