@@ -1,4 +1,4 @@
-// Fun??es que manipulam os dados das comandas
+// Funções que manipulam os dados das comandas
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,7 +23,7 @@ typedef struct comanda Comanda;
 Comanda *listaComandas, *comandaRemovida = NULL;
 FILE *comandasDB;
 
-// Fun??o que adiciona uma comanda ? lista de comandas
+// Função que adiciona uma comanda à lista de comandas
 void adicionarComanda(Comanda **lista, int id, char *nome) {
     Comanda *ponteiroAuxiliar, *novaComanda = malloc(sizeof(Comanda));
 
@@ -31,19 +31,19 @@ void adicionarComanda(Comanda **lista, int id, char *nome) {
     strcpy(novaComanda -> nomeCliente, nome);
     novaComanda -> proximaComanda = NULL;
 
-    if(*lista == NULL) { // Se a lista est? vazia...
+    if(*lista == NULL) { // Se a lista está vazia...
         *lista = novaComanda; // ...A lista recebe o novo item
     }
     else {
         ponteiroAuxiliar = *lista;
-        while(ponteiroAuxiliar -> proximaComanda != NULL) { // Enquanto o ponteiro para o pr?ximo item n?o for nulo...
-            ponteiroAuxiliar = ponteiroAuxiliar -> proximaComanda; // ...O ponteiro auxiliar recebe o pr?ximo item
+        while(ponteiroAuxiliar -> proximaComanda != NULL) { // Enquanto o ponteiro para o próximo item não for nulo...
+            ponteiroAuxiliar = ponteiroAuxiliar -> proximaComanda; // ...O ponteiro auxiliar recebe o próximo item
         }
-        ponteiroAuxiliar -> proximaComanda = novaComanda; // O pr?ximo item recebe o novo item quando o while n?o ? mais atendido
+        ponteiroAuxiliar -> proximaComanda = novaComanda; // O próximo item recebe o novo item quando o while não é mais atendido
     }
 }
 
-// Fun??o que solicita ao usu?rio as informa??es a serem inseridas na comanda
+// Função que solicita ao usuário as informações a serem inseridas na comanda
 void input_adicionarComanda() {
     system("cls");
 
@@ -66,7 +66,7 @@ void input_adicionarComanda() {
     adicionarComanda(&listaComandas, id, nome);
 }
 
-// Fun??o que remove uma comanda da lista de comandas
+// Função que remove uma comanda da lista de comandas
 Comanda* removerComanda(Comanda **lista, int id) {
     Comanda *ponteiroAuxiliar, *removerComanda = NULL;
 
@@ -110,7 +110,7 @@ void excluirRegistroComandas(int id) {
     rename("../DataBase/arquivoTemporarioComandas.txt", "../DataBase/comandasDB.txt");
 }
 
-// Fun??o que solicita ao usu?rio o ID da comanda a ser removida
+// Função que solicita ao usuário o ID da comanda a ser removida
 void input_removerComanda() {
     system("cls");
 
@@ -128,12 +128,12 @@ void input_removerComanda() {
         free(comandaRemovida);
     } else {
         system("cls");
-        printf("Comanda n�o encontrada!");
+        printf("Comanda não encontrada!");
     }
     Sleep(2000);
 }
 
-// Fun??o que busca um item na lista de produtos
+// Função que busca um item na lista de produtos
 Item* buscarItem(Item* lista, int id) {
     Item* buscador = lista;
     while (buscador != NULL) {
@@ -145,7 +145,7 @@ Item* buscarItem(Item* lista, int id) {
     return NULL;
 }
 
-// Fun??o que busca uma comanda na lista de comandas
+// Função que busca uma comanda na lista de comandas
 Comanda* buscarComanda(Comanda* lista, int id) {
     Comanda* buscador = lista;
     while (buscador != NULL) {
@@ -157,14 +157,14 @@ Comanda* buscarComanda(Comanda* lista, int id) {
     return NULL;
 }
 
-// Fun??o que adiciona pedidos ? uma determinada comanda
+// Função que adiciona pedidos à uma determinada comanda
 void adicionarPedidos(Comanda* comanda, Item* item) {
     adicionarProduto(&(comanda -> listaPedidos), item -> idProduto, item -> nomeProduto, item -> valorProduto);
 
     comanda -> valorComanda += item -> valorProduto;
 }
 
-// Fun??o que pede ao usu?rio a comanda e o produto que vai ser inserido ? comanda selecionada
+// Função que pede ao usuário a comanda e o produto que vai ser inserido à comanda selecionada
 void input_adicionarPedidos() {
     system("cls");
 
@@ -184,7 +184,7 @@ void input_adicionarPedidos() {
 
     if(comanda == NULL || item == NULL) {
         system("cls");
-        printf("ID da comanda e/ou produto inv�lidos!");
+        printf("ID da comanda e/ou produto inválidos!");
         Sleep(2000);
         navegar_Comandas();
     } else {
@@ -192,7 +192,7 @@ void input_adicionarPedidos() {
     }
 }
 
-// Fun??o que imprime as comandas
+// Função que imprime as comandas
 void imprimirComandas(Comanda *comanda) {
     system("cls");
 
@@ -217,7 +217,7 @@ void imprimirComandas(Comanda *comanda) {
     getch();
 }
 
-//Fun??o que define uma comanda como paga (Envia o valor da comanda ao caixa e a remove)
+//Função que define uma comanda como paga (Envia o valor da comanda ao caixa e a remove)
 void comandaPaga() {
     system("cls");
 
@@ -247,14 +247,14 @@ void comandaPaga() {
         }
     } else {
         system("cls");
-        printf("Comanda n�o encontrada! ID inv�lido!");
+        printf("Comanda não encontrada! ID inválido!");
         Sleep(2000);
         navegar_Comandas();
     }
     Sleep(2000);
 }
 
-// Fun??o que faz a leitura dos itens das comandas no arquivo ao iniciar o programa e joga na estrutura
+// Função que faz a leitura dos itens das comandas no arquivo ao iniciar o programa e joga na estrutura
 void lerComandas() {
     int id;
     char nome[100];
