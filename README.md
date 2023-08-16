@@ -14,6 +14,7 @@
 <p>✔️ É possível adicionar um produto do cardápio à comanda do cliente.</p>
 <p>✔️ O valor da comanda é adicionada ao caixa do restaurante ao definí-la como paga.</p>
 <p>✔️ É possível adicionar ou subtrair valores em cima do valor do caixa do restaurante.</p>
+<p>✔️ Os registros de cardápio e comanda são gravados em arquivos do tipo .txt localizados em "DataBase".</p>
 
 <h3><strong>Observação:</strong></h3>
 <p>⚠️ A interface do programa é no próprio terminal.</p>
