@@ -2,30 +2,30 @@
   <h1><strong>Project ByteBurguer</strong></h1>
 </header>
 
-<h3>Descrição:</h3>
-<p>Project ByteBurguer é um projeto construído no segundo período do curso de graduação em Ciências da Computação na Universidade Estadual Da Paraíba (UEPB) - Campus I. O projeto consiste em um sistema de controle de cardápio e pedidos de um restaurante (Ficticiamente batizado de "ByteBurguer").</p>
+<h3>Description:</h3>
+<p>Project ByteBurguer is a project built in the second period of the undergraduate course in Computer Science at the State University of Paraíba (UEPB) - Campus I. The project consists of a menu and order control system for a restaurant (fictitiously named "ByteBurguer ").</p>
 
-<h3><strong>Objetivos:</strong></h3>
-<p>O foco principal do projeto é o estudo da construção de algumas funcionalidades na linguagem C, como por exemplo, listas encadeadas, structs, manipulação de arquivos, ponteiros, e todo o estudo geral da linguagem C. Também teve como principal objetivo o estudo específico do básico de estrutura de dados utilizando a linguagem de programação C.</p>
+<h3><strong>Goals:</strong></h3>
+<p>The main focus of the project is the study of the construction of some features in the C language, such as linked lists, structs, file manipulation, pointers, and the entire general study of the C language. It also had as its main objective the specific study of basic data structure using the C programming language.</p>
 
-<h3><strong>Funcionalidades:</strong></h3>
-<p>✔️ É possível adicionar ou remover um produto ao cardápio do restaurante.</p>
-<p>✔️ É possível adicionar ou remover uma comanda (pedido) com as informações do cliente.</p>
-<p>✔️ É possível adicionar um produto do cardápio à comanda do cliente.</p>
-<p>✔️ O valor da comanda é adicionada ao caixa do restaurante ao definí-la como paga.</p>
-<p>✔️ É possível adicionar ou subtrair valores em cima do valor do caixa do restaurante.</p>
-<p>✔️ Os registros de cardápio e comanda são gravados em arquivos do tipo .txt localizados em "DataBase".</p>
+<h3><strong>Functionalities:</strong></h3>
+<p>✔️ It is possible to add or remove a product from the restaurant menu.</p>
+<p>✔️ It is possible to add or remove a command (order) with customer information.</p>
+<p>✔️ It is possible to add a product from the menu to the customer's command.</p>
+<p>✔️ The value of the order is added to the restaurant's cash register when it is defined as paid.</p>
+<p>✔️ It is possible to add or subtract amounts from the restaurant's cash value.</p>
+<p>✔️ Menu and command records are saved in .txt files located in "DataBase".</p>
 
-<h3><strong>Observação:</strong></h3>
-<p>⚠️ A interface do programa é no próprio terminal.</p>
+<h3><strong>Observation:</strong></h3>
+<p>⚠️ The program interface is in the terminal itself.</p>
 
-<h3>Sobre</h3>
-<p>• O programa foi construído 100% na linguagem de programação C.</p>
-<p>• O programa foi construído através do editor de código (Visual Studio Code).</p>
+<h3>About</h3>
+<p>• The program was built 100% in the C programming language.</p>
+<p>• The program was built using the code editor (Visual Studio Code).</p>
 
 <br>
 
-<blockquote><strong>Obs:</strong> O programa apresenta algumas limitações de tratamentos de erros, inserções e leitura de arquivos, entre outros pequenos detalhes.</blockquote>
+<blockquote><strong>Obs:</strong> The program has some limitations in error handling, insertion and file reading, among other small details.</blockquote>
 
 <h1></h1>
 
