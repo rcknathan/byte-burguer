@@ -31,3 +31,10 @@
 
 <a href="https://visualstudio.microsoft.com/pt-br/vs/features/cplusplus/">![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)</a>
 <a href="https://code.visualstudio.com/">![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)</a>
+
+<h2>Skill acquired with this project</h2>
+<p align="center">
+  <a href="https://github.com/rcknathan">
+    <img src="https://skillicons.dev/icons?i=c" />
+  </a>
+</p>
